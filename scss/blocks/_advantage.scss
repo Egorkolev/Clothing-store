@@ -1,0 +1,26 @@
+.advantage {
+    margin: 2rem 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        .advantage-inner {
+            display: flex;
+            align-items: center;
+            ._icon-delivery {
+                font-size: 3rem;
+                margin-right: 1rem;
+            }
+            ._icon-more {
+                font-size: 3rem;
+                margin-right: 1rem;
+            }
+            ._icon-support {
+                font-size: 3rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

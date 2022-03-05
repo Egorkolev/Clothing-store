@@ -1,0 +1,61 @@
+.footer-top {
+    background-color: $black;
+    padding: 1rem 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        .subtitle-12 {
+            color: white;
+        }
+        .search-container {
+            & input {
+                padding: 0.8rem 2rem;
+                border: 1px solid #FFFFFF;
+                background: #FFFFFF;
+                opacity: 0.4;
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+
+            & button {
+                padding: 0.8rem 1.5rem;
+                background-color: $black;
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    gap: 2rem;
+    .categories-inner {
+        & h2 {
+            margin: 2rem 0;
+        }
+        & a {
+            font-size: 1.2rem;
+            line-height: 3.4rem;
+            color: $black;
+            display: flex;
+            & p {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.down-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & span {
+        font-size: 1.2rem;
+    }
+}

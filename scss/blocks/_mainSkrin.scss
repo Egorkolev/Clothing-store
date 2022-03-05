@@ -1,0 +1,102 @@
+.main {
+    margin: 30px 0;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        .mySwiper {
+            flex: 1 1 40rem;
+            .swiper-wrapper {
+                .swiper-slide {
+                    position: relative;
+                    .box-name {
+                        position: absolute;
+                        max-width: 29rem;
+                        min-height: 10rem;
+                        background-color: white;
+                        padding: 1.5rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        .subtitle-12 {
+                            opacity: 0.4;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+            .swiper-button-next {
+                background-color: white;
+                padding: 3rem;
+                border-radius: 50%;
+                color: black;
+                font-size: 2rem;
+                &::after {
+                    font-size: 2rem;
+                }
+            }
+            .swiper-button-prev {
+                background-color: white;
+                padding: 3rem;
+                border-radius: 50%;
+                color: black;
+                &::after {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .accortimente {
+            flex: 1 1 40rem;
+            .thinks {
+                display: flex;
+                justify-content: space-between;
+                gap: 3rem;
+                .womens {
+                    position: relative;
+                    flex: 1 1 20rem;
+                    & img {
+                        width: 100%;
+                    }
+                    .box-name {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: white;
+                        padding: 1rem;
+                    }
+                }
+                .mens {
+                    position: relative;
+                    flex: 1 1 20rem;
+                    & img {
+                        width: 100%;
+                    }
+                    .box-name {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: white;
+                        padding: 1rem;
+                    }
+                }
+            }
+            .accessories {
+                position: relative;
+                margin-top: 2.7rem;
+                flex: 1 1 40rem;
+                & img {
+                    width: 100%;
+                }
+                .box-name {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: white;
+                    padding: 1rem;
+                }
+            }
+        } 
+    }
+}

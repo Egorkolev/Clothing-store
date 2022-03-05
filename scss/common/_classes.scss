@@ -1,0 +1,92 @@
+.title-36 {
+    @include textStyles(36px, 42px, 600, #121212);
+}
+
+.title-26 {
+    @include textStyles(26px, 36px, 600, #121212);
+}
+ 
+.title-22 {
+    @include textStyles(22px, 30px, 600, #121212);
+    @include responsiveFont(22, 14);
+}
+
+.title-16 {
+    @include textStyles(16px, 24px, 600, #121212);
+}
+
+.title-14 {
+    @include textStyles(14px, 22px, 600, #121212);
+}
+
+.subtitle-12 {
+    @include textStyles(12px, 18px, 600, #121212);
+}
+
+.body-14 {
+    @include textStyles(14px, 22px, normal, #121212);
+}
+
+.body-bold {
+    @include textStyles(14px, 22px, bold, #121212);
+}
+
+.small-11 {
+    @include textStyles(11px, 18px, 500, #121212);
+}
+
+.button-new {
+    @include textStyles(13px, 15px, 500, #121212);
+}
+
+
+// button styles  
+.button { 
+    // padding top bottom, padding left right, background-color, color, border-radius, borderSize, borderStyle, borderColor 
+    @include button(5px, 10px, $buttonColor, white, none, none, solid, $buttonColor); 
+    @include responsiveFont(22, 14);
+    cursor: pointer; 
+    border: none;
+    transition: $transition; 
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    &:hover { 
+        transition: $transition; 
+        @include button(5px, 10px, transparent, $buttonColor, none, none, solid, $mainColor); 
+        background: #121212;
+        opacity: 0.8;
+        color: white;
+    } 
+    &:focus{ 
+        outline: none; 
+    } 
+} 
+ 
+
+.button-empty{ 
+    // padding top bottom, padding left right, background-color, color, border-radius, borderSize, borderStyle, borderColor 
+    @include button(5px, 10px, $lightgray, none, $black, none, solid, $buttonColor); 
+    @include responsiveFont(22, 14);
+    cursor: pointer; 
+    border: none;
+    transition: $transition; 
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    &:hover { 
+        transition: $transition; 
+        @include button(5px, 10px, $gray, $black, none, none, solid, $mainColor); 
+        border: none;
+        border-radius: none;
+    } 
+    &:focus{ 
+        outline: none; 
+    } 
+} 
+ 
+.container{ 
+    max-width: ($container + px); 
+    padding: 0 ($paddingContainer / 2 + px); 
+    width: 100%; 
+    min-height: 100%; 
+    margin: 0 auto; 
+}

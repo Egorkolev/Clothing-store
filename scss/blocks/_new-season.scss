@@ -1,0 +1,60 @@
+.new-season-sale {
+    margin: 5rem 0;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+        .new-season {
+            position: relative;
+            flex: 1 1 38rem;
+            & img {
+                width: 100%;
+            }
+            .box-name {
+                position: absolute;
+                background-color: white;
+                padding: 1.5rem;
+                left: 50%;
+                top: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                text-align: center;
+                .subtitle-12 {
+                    opacity: 0.4;
+                    margin-bottom: 1rem;
+                }
+                .title-22 {
+                    white-space: nowrap;
+                }
+            }
+        }
+        .sale {
+            position: relative;
+            flex: 1 1 38rem;
+            & img {
+                width: 100%;
+            }
+            .box-name {
+                position: absolute;
+                background-color: white;
+                padding: 1.5rem;
+                left: 50%;
+                top: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                text-align: center;
+                .subtitle-12 {
+                    opacity: 0.4;
+                    margin-bottom: 1rem;
+                }
+                .title-22 {
+                    & span {
+                        color: $pink;
+                    }
+                }
+                .title-22 {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
