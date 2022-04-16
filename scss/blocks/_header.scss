@@ -49,10 +49,18 @@
         flex-wrap: wrap;
         gap: 3rem;
         .menu__items {
+            &:hover {
+                font-size: 1.5rem;
+            }
             .menu__link {
                 color: $black;
                 font-size: 1.4rem;
                 line-height: 1.6rem;
+                transition: 1s;
+                &:hover {
+                    font-size: 1.5rem;
+                    transition: 1s;
+                }
             }
         }
     }

@@ -1,0 +1,39 @@
+.availability {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    &__reviews {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__stars {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    &__stock {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    &__sku {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__inStock {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .title-14 {
+        opacity: 0.6;
+    }
+}

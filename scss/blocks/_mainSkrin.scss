@@ -6,24 +6,6 @@
         gap: 3rem;
         .mySwiper {
             flex: 1 1 40rem;
-            .swiper-wrapper {
-                .swiper-slide {
-                    position: relative;
-                    .box-name {
-                        position: absolute;
-                        max-width: 29rem;
-                        min-height: 10rem;
-                        background-color: white;
-                        padding: 1.5rem;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        .subtitle-12 {
-                            opacity: 0.4;
-                            margin-bottom: 1rem;
-                        }
-                    }
-                }
-            }
             .swiper-button-next {
                 background-color: white;
                 padding: 3rem;
@@ -98,5 +80,24 @@
                 }
             }
         } 
+    }
+}
+
+.swiper-wrapper {
+    .swiper-slide {
+        position: relative;
+        .box-name {
+            position: absolute;
+            max-width: 29rem;
+            min-height: 10rem;
+            background-color: white;
+            padding: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            .subtitle-12 {
+                opacity: 0.4;
+                margin-bottom: 1rem;
+            }
+        }
     }
 }
